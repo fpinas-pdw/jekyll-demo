@@ -6,4 +6,4 @@ categories: [jekyll, github-pages]
 draft: false
 ---
 
-Contenido del post mcon modificacion.
+Contenido del post con modificacion.
