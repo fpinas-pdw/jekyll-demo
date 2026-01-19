@@ -1,0 +1,13 @@
+title: Mi Blog
+description: Blog generado con Jekyll y GitHub Pages
+url: https://usuario.github.io
+baseurl: /blog
+
+markdown: kramdown
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+show_drafts: false
