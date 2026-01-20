@@ -1,3 +1,21 @@
 <header>
-  <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+  <div class="header-container">
+    <h1>
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/Azurebrains-logo-azul.png' | relative_url }}" alt="Azurebrains Logo" class="site-logo">
+        {{ site.title }}
+      </a>
+    </h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="{{ '/' | relative_url }}">Blog</a></li>
+        <li><a href="#">Azure</a></li>
+        <li><a href="#">AI</a></li>
+        <li><a href="#">DevOps</a></li>
+        <li><a href="#">Networking</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="{{ '/about' | relative_url }}">About</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>

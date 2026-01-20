@@ -1,7 +1,7 @@
-title: Mi Blog
-description: Blog generado con Jekyll y GitHub Pages
-url: https://usuario.github.io
-baseurl: /blog
+title: Azurebrains
+description: Blog sobre Tecnologías Cloud, Azure, Inteligencia Artificial, etc.
+url: https://www.azurebrains.com
+baseurl: ""
 
 markdown: kramdown
 theme: minima

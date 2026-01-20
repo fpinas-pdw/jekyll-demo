@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="home-container">
+  <!-- Main Content Grid -->
+  <section class="articles-grid">
+    {% for post in site.posts %}
+    <article class="article-card">
+      <a href="{{ post.url | relative_url }}" class="card-link">
+        {% if post.featured_image %}
+          <div class="card-image" style="background-image: url('{{ post.featured_image }}')"></div>
+        {% else %}
+          <div class="card-image card-placeholder"></div>
+        {% endif %}
+        <div class="card-content">
+          {% if post.category %}
+            <span class="category-label">{{ post.category | upcase }}</span>
+          {% endif %}
+          <h3 class="card-title">{{ post.title }}</h3>
+          {% if post.excerpt %}
+            <p class="card-excerpt">{{ post.excerpt }}</p>
+          {% endif %}
+          {% if post.author %}
+            <p class="card-meta">BY <span class="author-name">{{ post.author | upcase }}</span></p>
+          {% endif %}
+        </div>
+      </a>
+    </article>
+    {% endfor %}
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="newsletter-section">
+    <h3>NEWSLETTER</h3>
+    <p class="newsletter-tagline">Mantente actualizado con las últimas novedades de Azure e IA</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Tu email" class="newsletter-input">
+      <button type="submit" class="newsletter-button">SUSCRIBIRSE</button>
+    </form>
+    <p class="newsletter-disclaimer">AL PROPORCIONAR TU INFORMACIÓN, ACEPTAS NUESTROS <a href="#">TÉRMINOS DE USO</a> Y NUESTRA <a href="#">POLÍTICA DE PRIVACIDAD</a></p>
+  </section>
+
+  {{ content }}
+</div>
